@@ -36,7 +36,7 @@
 
 #include <algorithm>
 #include <vector>
-#include <openvdb/math/Math.h>             // for Pow2, needed by WENO and  Gudonov
+#include <openvdb/math/OpenVDBMath.h>             // for Pow2, needed by WENO and  Gudonov
 #include <openvdb/Types.h>                 // for Real
 #include <openvdb/math/Coord.h>            // for Coord
 #include <openvdb/math/FiniteDifference.h> // for WENO5 and GudonovsNormSqrd

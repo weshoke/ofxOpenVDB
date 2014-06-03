@@ -35,7 +35,7 @@
 
 #include <openvdb/Types.h>
 #include <openvdb/Grid.h>
-#include <openvdb/math/Math.h> // for isApproxEqual()
+#include <openvdb/math/OpenVDBMath.h> // for isApproxEqual()
 #include <openvdb/tree/TreeIterator.h>
 #include <openvdb/tree/ValueAccessor.h>
 #include <openvdb/tree/LeafManager.h>
