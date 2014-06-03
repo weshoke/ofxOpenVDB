@@ -12,7 +12,6 @@ void ofApp::setup() {
 	floatGrid = openvdb::tools::createLevelSetSphere<FloatGrid>(5, Vec3s(0, 0, 0), 0.05, openvdb::OPENVDB_VERSION_NAME::LEVEL_SET_HALF_WIDTH);
 	FloatGrid::Ptr grid2 = openvdb::tools::createLevelSetSphere<FloatGrid>(3, Vec3s(5, 0, 0), 0.05, openvdb::OPENVDB_VERSION_NAME::LEVEL_SET_HALF_WIDTH);
 	
-	//Vec3IGrid::Ptr copyOfIn1 = floatGrid->deepCopy(),
 	openvdb::tools::csgDifference(*floatGrid, *grid2);
 	
 	std::vector<Vec3s> points;
@@ -63,17 +62,7 @@ ofVec4f colors[] = {
 void drawGrid(const FloatGrid::Ptr& grid) {
 	glBegin(GL_LINES);
 	
-	//FloatGrid::ValueOnCIter
-	//Int64Grid::ValueOnCIter iter = grid.cbeginValueOn();
-	//for (FloatGrid::ValueOnCIter iter = grid->cbeginValueOn(); iter.test(); ++iter) {
 	for(FloatGrid::TreeType::NodeCIter iter = grid->tree().cbeginNode(); iter.test(); ++iter) {
-		/*
-		if(!iter.isVoxelValue()) {
-			std::cout << "non voxel\n";
-		}
-	
-		if(!iter.isVoxelValue()) continue;
-		*/
 		CoordBBox bbox;
 		if(!iter.getBoundingBox(bbox)) continue;
 		
