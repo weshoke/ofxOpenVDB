@@ -63,6 +63,16 @@ void drawCube(const Grid& grid, const Coord &minCoord, const Coord &maxCoord) {
 }
 
 template <typename Grid>
+void drawVoxel(const Grid& grid, Coord c) {
+	const typename Grid::TreeType::LeafNodeType *node = grid.getConstAccessor().probeConstLeaf(c);
+	if(node) {
+		glBegin(GL_LINES);
+			drawCube(grid, c, c);
+		glEnd();
+	}
+}
+
+template <typename Grid>
 void drawGridHiearchy(const Grid& grid) {
 	static ofVec4f colors[] = {
 		ofVec4f(0., 142./255., 87./255., 0.7),
