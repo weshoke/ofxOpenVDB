@@ -39,8 +39,8 @@
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "134"
          endingLineNumber = "134"
-         landmarkName = "drawGrid(const FloatGrid::Ptr&amp; grid)"
-         landmarkType = "7">
+         landmarkName = "ofApp::draw()"
+         landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>
 </Bucket>

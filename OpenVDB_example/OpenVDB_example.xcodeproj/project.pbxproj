@@ -14,6 +14,8 @@
 		B9E826C5193D972F00A63DDA /* libopenvdb.so.2.3 in CopyFiles */ = {isa = PBXBuildFile; fileRef = B9E82554193D8F9D00A63DDA /* libopenvdb.so.2.3 */; };
 		B9E826C6193D972F00A63DDA /* libopenvdb.so.2.3.0 in CopyFiles */ = {isa = PBXBuildFile; fileRef = B9E82555193D8F9D00A63DDA /* libopenvdb.so.2.3.0 */; };
 		B9E826C7193D99A800A63DDA /* libtbb.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = B9E8265C193D956400A63DDA /* libtbb.dylib */; };
+		B9E828E71940F1E600A63DDA /* libHalf.11.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = B9E825C7193D956400A63DDA /* libHalf.11.dylib */; };
+		B9E828E81940F1E600A63DDA /* libHalf.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = B9E825C8193D956400A63DDA /* libHalf.dylib */; };
 		BBAB23CB13894F3D00AA2426 /* GLUT.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BBAB23BE13894E4700AA2426 /* GLUT.framework */; };
 		E45BE97B0E8CC7DD009D7055 /* AGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9710E8CC7DD009D7055 /* AGL.framework */; };
 		E45BE97C0E8CC7DD009D7055 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9720E8CC7DD009D7055 /* ApplicationServices.framework */; };
@@ -67,6 +69,8 @@
 				B9E826C4193D972F00A63DDA /* libopenvdb.so in CopyFiles */,
 				B9E826C5193D972F00A63DDA /* libopenvdb.so.2.3 in CopyFiles */,
 				B9E826C6193D972F00A63DDA /* libopenvdb.so.2.3.0 in CopyFiles */,
+				B9E828E71940F1E600A63DDA /* libHalf.11.dylib in CopyFiles */,
+				B9E828E81940F1E600A63DDA /* libHalf.dylib in CopyFiles */,
 				B9E826C7193D99A800A63DDA /* libtbb.dylib in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

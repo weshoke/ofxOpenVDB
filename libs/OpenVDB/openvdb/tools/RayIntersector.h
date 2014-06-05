@@ -60,7 +60,7 @@
 #define OPENVDB_TOOLS_RAYINTERSECTOR_HAS_BEEN_INCLUDED
 
 #include <openvdb/math/DDA.h>
-#include <openvdb/math/Math.h>
+#include <openvdb/math/OpenVDBMath.h>
 #include <openvdb/math/Ray.h>
 #include <openvdb/math/Stencils.h>
 #include <openvdb/Grid.h>
